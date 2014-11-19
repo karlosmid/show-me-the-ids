@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+
+  "name": "Show me the html ids!",
+  "description": "This extension adds to all html elements from DOM tree id attribute with unique name based on element path in document.",
+  "version": "0.2",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["show_me_the_ids.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon128.png"
+  }
+}

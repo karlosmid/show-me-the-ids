@@ -1,0 +1,11 @@
+chrome: --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html --tags ~@chrome
+ci: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html
+default: --format progress
+firefox: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html --tags ~@firefox
+ie6: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html --tags ~@bug --tags ~@firefox --tags ~@ie6-bug
+ie7: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html --tags ~@ie7
+serial_ie7: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber.html --tags ~@ie7
+ie8: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html --tags ~@bug --tags ~@firefox --tags ~@ie8-bug
+ie9: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html --tags ~@bug --tags ~@firefox --tags ~@ie9-bug
+ie10: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html --tags ~@bug --tags ~@firefox --tags ~@ie10-bug
+phantomjs: --format Cucumber::Formatter::Sauce --out reports/junit --format html --out reports/cucumber<%= ENV['TEST_ENV_NUMBER'] %>.html --tags ~@bug --tags ~@firefox --tags ~@phantomjs-bug

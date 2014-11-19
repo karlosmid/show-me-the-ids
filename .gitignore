@@ -1,0 +1,9 @@
+*.swp
+reports
+.DS_Store
+tmp
+Gemfile.lock
+*.html
+*.class
+log
+config/application.yml

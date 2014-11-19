@@ -1,0 +1,4 @@
+# for testing
+SITE: http://webix.com/demos/booking.html
+BROWSER_LABEL: chrome
+PAGE_TIMEOUT: 5
