@@ -4,17 +4,17 @@ class WebixPage
   expected_title ""
   @@load_timeout
 
-  div(:trip_type_return, :id => 'document_html_body_div_div_div_div_div_div_div_div_div_div_div_div_div_1_')
-  span(:departure, :id => 'document_html_body_div_div_div_div_div_div_div_div_div_div_span_0_')
-  span(:destination, :id => 'document_html_body_div_div_div_div_div_div_div_div_div_div_span_1_')
-  span(:departure_date, :id => 'document_html_body_div_div_div_div_div_div_div_div_div_div_span_2_')
-  span(:date_picked, :id => 'document_html_body_div_div_div_div_div_div_div_span_32_')
-  div(:talin, :id => 'document_html_body_div_div_div_div_div_div_7_')
-  div(:riga, :id => 'document_html_body_div_div_div_div_div_div_5_')
-  label(:flexible_dates, :id => 'document_html_body_div_div_div_div_div_div_div_div_div_div_div_a_label_0_')
-  button(:adults_plus, :id =>'x1416398282487')
-  button(:children_plus, :id =>'x1416398282489')
-  button(:book, :id => 'document_html_body_div_div_div_div_div_div_div_div_div_div_input_0_')
+  label(:trip_type_return, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_div_div_div_1_div_a_label_0')
+  span(:departure, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_1_div_span_0')
+  span(:destination, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_2_div_span_0')
+  span(:departure_date, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_3_div_span_0')
+  span(:date_picked, :id => 'document_html_body_div_2_div_div_1_div_div_2_div_3_div_5_span_0')
+  div(:talin, :id => 'document_html_body_div_div_div_1_div_div_div_7')
+  div(:riga, :id => 'document_html_body_div_1_div_div_1_div_div_div_5')
+  label(:flexible_dates, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_4_div_div_a_label_0')
+  label(:adults_plus, :id =>'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_5_div_1_label_0')
+  label(:children_plus, :id =>'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_5_div_2_label_0')
+  button(:book, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_7_div_input_0')
 
   def set_load_timeout(value)
     @@load_timeout = value

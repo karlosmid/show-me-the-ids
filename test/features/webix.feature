@@ -10,7 +10,6 @@ Feature: manage webix
         And I click on departure
         And I click on talin
         And I click on destination
-        And I wait for 45 seconds
         And I click on riga
         And I click on departure date
         And I click on date pick

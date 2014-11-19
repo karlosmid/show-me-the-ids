@@ -8,8 +8,6 @@ require 'yaml'
 World(PageObject::PageFactory)
 
 app = YAML.load_file('config/application.yml')
-profile = Selenium::WebDriver::Chrome::Profile.new
-profile['extensions.ui.developer_mode'] = true
 
 def local_browser
   if @app['BROWSER_LABEL']
@@ -18,7 +16,8 @@ def local_browser
     browser_label = :firefox
     @app['BROWSER_LABEL'] = 'firefox'
   end
-  Watir::Browser.new browser_label, :switches => %w[--load-extension=/Users/karlosmid/Library/Application\ Support/Google/Chrome/Default/Extensions/pdcedafpnkbnnconlacodncnniaocijo/0.1_0]
+  puts ["--load-extension=#{@app['EXTENSION_PATH']}#{@app['EXTENSION_VERSION']}"].to_s
+  Watir::Browser.new browser_label, :switches => ["--load-extension=#{@app['EXTENSION_PATH']}#{@app['EXTENSION_VERSION']}"]
 
 end
 
