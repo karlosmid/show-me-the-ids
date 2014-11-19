@@ -57,11 +57,13 @@ Prepare environment:
 application.yml content:
 
     # for testing
-    SITE: https://qa.lawfirmmatrix.com
+    SITE: http://webix.com/demos/booking.html
     BROWSER_LABEL: chrome
     PAGE_TIMEOUT: 5
 
-To run a single test enter `cucumber test/features/check_ids.feature`.
+To run a single test enter  
+`cd test`
+`cucumber features/check_ids.feature`.
 
 # Git workflow
 

@@ -3,7 +3,7 @@
 
   "name": "Show me the html ids!",
   "description": "This extension adds to all html elements from DOM tree id attribute with unique name based on element path in document.",
-  "version": "0.2",
+  "version": "0.3",
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
