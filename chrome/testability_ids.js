@@ -14,7 +14,7 @@ var created_ids = {}
  * extension logs
  * @type {string}
  */
-var log_filter = 'show_me_the_ids: '
+var log_filter = 'testability_ids: '
 /**
  * Creates unique string based on Element path up to root Element in DOM tree.
  * If there is already element on this path, then it gets unique order number at the end.
@@ -26,12 +26,12 @@ function path_to_root(node) {
     var path = [];
     while (node) {
         if (node instanceof Element){
-            id = node.getAttribute('id');
+            testability_id = node.getAttribute('data-testabilityid');
         }
-        if(id == null){
+        if(testability_id == null){
             preserve_index = '0';
         }else{
-            preserve_index_array = id.split('_')
+            preserve_index_array = testability_id.split('_')
             preserve_index = preserve_index_array[preserve_index_array.length-1]
         }
         if(parseInt(preserve_index) == 0){
@@ -71,8 +71,8 @@ function walkTheDOMandSetId(node, func) {
  */
 function add_id(node, func) {
     try {
-         if (node instanceof Element && !node.hasAttribute('id')) {
-             node.setAttribute('id',path_to_root(node));
+         if (node instanceof Element) {
+             node.setAttribute('data-testabilityid',path_to_root(node));
         }
      }
      catch(err){
@@ -133,7 +133,7 @@ observeDOM(document.documentElement,function() {
 document.addEventListener('click', function (e) {
   var srcElement = e.srcElement;
   if (e.shiftKey){
-    console.log(log_filter+srcElement.getAttributeNode('id').value);
+    console.log(log_filter+srcElement.attributes.getNamedItem('data-testabilityid').value);
     e.preventDefault();
   }
 }, false);

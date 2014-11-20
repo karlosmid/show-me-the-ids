@@ -1,13 +1,13 @@
 {
   "manifest_version": 2,
 
-  "name": "Show me the html ids!",
-  "description": "This extension adds to all html elements from DOM tree id attribute with unique name based on element path in document.",
-  "version": "0.3",
+  "name": "Testability ids!",
+  "description": "Adds to all html elements from DOM tree data-testabilityid attribute with unique value based on element path in document DOM tree.",
+  "version": "0.4",
   "content_scripts": [
     {
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["show_me_the_ids.js"]
+      "js": ["testability_ids.js"]
     }
   ],
   "browser_action": {
