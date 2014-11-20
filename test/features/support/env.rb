@@ -16,7 +16,6 @@ def local_browser
     browser_label = :firefox
     @app['BROWSER_LABEL'] = 'firefox'
   end
-  puts ["--load-extension=#{@app['EXTENSION_PATH']}#{@app['EXTENSION_VERSION']}"].to_s
   Watir::Browser.new browser_label, :switches => ["--load-extension=#{@app['EXTENSION_PATH']}#{@app['EXTENSION_VERSION']}"]
 
 end

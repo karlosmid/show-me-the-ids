@@ -4,17 +4,17 @@ class WebixPage
   expected_title ""
   @@load_timeout
 
-  label(:trip_type_return, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_div_div_div_1_div_a_label_0')
-  span(:departure, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_1_div_span_0')
-  span(:destination, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_2_div_span_0')
-  span(:departure_date, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_3_div_span_0')
-  span(:date_picked, :id => 'document_html_body_div_2_div_div_1_div_div_2_div_3_div_5_span_0')
-  div(:talin, :id => 'document_html_body_div_div_div_1_div_div_div_7')
-  div(:riga, :id => 'document_html_body_div_1_div_div_1_div_div_div_5')
-  label(:flexible_dates, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_4_div_div_a_label_0')
-  label(:adults_plus, :id =>'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_5_div_1_label_0')
-  label(:children_plus, :id =>'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_5_div_2_label_0')
-  button(:book, :id => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_7_div_input_0')
+  label(:trip_type_return, :data_testabilityid => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_div_div_div_1_div_a_label_0')
+  span(:departure, :data_testabilityid => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_1_div_span_0')
+  span(:destination, :data_testabilityid => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_2_div_span_0')
+  span(:departure_date, :data_testabilityid => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_3_div_span_0')
+  span(:date_picked, :data_testabilityid => 'document_html_body_div_2_div_div_1_div_div_2_div_3_div_5_span_0')
+  div(:talin, :data_testabilityid => 'document_html_body_div_div_div_1_div_div_div_7')
+  div(:riga, :data_testabilityid => 'document_html_body_div_1_div_div_1_div_div_div_5')
+  label(:flexible_dates, :data_testabilityid => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_4_div_div_a_label_0')
+  button(:adults_plus, :data_testabilityid =>'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_5_div_1_div_div_input_2')
+  button(:children_plus, :data_testabilityid =>'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_5_div_2_div_div_input_2')
+  button(:book, :data_testabilityid => 'document_html_body_div_4_div_1_div_1_div_div_div_1_div_div_div_7_div_input_0')
 
   def set_load_timeout(value)
     @@load_timeout = value

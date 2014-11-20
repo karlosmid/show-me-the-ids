@@ -71,7 +71,7 @@ function walkTheDOMandSetId(node, func) {
  */
 function add_id(node, func) {
     try {
-         if (node instanceof Element) {
+         if (node instanceof Element && !node.getAttribute('data-testabilityid')) {
              node.setAttribute('data-testabilityid',path_to_root(node));
         }
      }
