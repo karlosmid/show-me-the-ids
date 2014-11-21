@@ -1,0 +1,9 @@
+{
+  "name": "testabilityids",
+  "title": "Testability ids!",
+  "id": "jid1-uTzQzbc8letSTg",
+  "description": "Adds to all html elements from DOM tree data-testabilityid attribute with unique value based on element path in document DOM tree.",
+  "author": "karlo.smid@tentamen.hr",
+  "license": "MPL 2.0",
+  "version": "0.5"
+}
